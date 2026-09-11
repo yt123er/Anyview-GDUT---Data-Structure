@@ -3,12 +3,9 @@
 空操作。
 typedef struct {
 ElemType *elem;//存储空间的基址
-ElemType *top;
-int size;
-int increment;
- 栈顶元素的下一个位置
-当前分配的存储容量
-/扩容时，增加的存储容量
+ElemType *top;// 栈顶元素的下一个位置
+int size;//当前分配的存储容量
+int increment;//扩容时，增加的存储容量
 } Sqstack2;
 要求实现下列函数:
 Status StackEmpty_Sq2(SqStack2 S);
